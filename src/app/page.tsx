@@ -3,12 +3,13 @@ import styles from "./page.module.css";
 import nextConfig from "../../next.config";
 
 export default function Home() {
+  const basePath = nextConfig.basePath || "";
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={`${basePath}/next.svg`}
           alt="Next.js logo"
           width={100}
           height={20}

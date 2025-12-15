@@ -6,11 +6,12 @@ console.log(`BASE_PATH: ${process.env.NEXT_PUBLIC_BASE_PATH}`);
 
 const nextConfig: NextConfig = {
     output: "export",           // next build 実行の際に Static Export を利用する
-    assetPrefix: basePath ? `${basePath}/` : undefined,
-    basePath: basePath,
-    images: {
-        unoptimized: true, // GitHub Pages では必須
-    },
+    reactStrictMode: true,
+    // assetPrefix: basePath ? `${basePath}/` : undefined,
+    // basePath: basePath,
+    // images: {
+    //     unoptimized: true, // GitHub Pages では必須
+    // },
 };
 
 export default nextConfig;
