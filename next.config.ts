@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
     output: "export",           // next build 実行の際に Static Export を利用する
     assetPrefix: basePath ? `${basePath}/` : undefined,
     basePath: basePath,
+    images: {
+        unoptimized: true, // GitHub Pages では必須
+    },
 };
 
 export default nextConfig;
