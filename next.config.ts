@@ -7,6 +7,9 @@ console.log(`BASE_PATH: ${process.env.NEXT_PUBLIC_BASE_PATH}`);
 const nextConfig: NextConfig = {
     output: "export",           // next build 実行の際に Static Export を利用する
     reactStrictMode: true,
+    trailingSlash: true,
+    assetPrefix: "/mcstructure-item-list-viewer/",
+    basePath: "/mcstructure-item-list-viewer",
     // assetPrefix: basePath ? `${basePath}/` : undefined,
     // basePath: basePath,
     // images: {
